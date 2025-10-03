@@ -13,6 +13,6 @@ terraform {
 
 provider "google" {
   project = "gd-gcp-internship-devops"
-  region  = "us-central1"
-  zone    = "us-central1-a"
+  region  = var.gcp_region
+  zone    = var.gcp_zone
 }

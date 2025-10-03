@@ -30,7 +30,7 @@ resource "google_compute_firewall" "health_check_internal" {
     protocol = "tcp"
     ports    = ["80"]
   }
-  source_ranges = ["130.211.0.0/22", "35.191.0.0/16", "10.0.1.0/24"]
+  source_ranges = ["130.211.0.0/22", "35.191.0.0/16"]
   target_tags   = ["app-instance"]
 }
 
